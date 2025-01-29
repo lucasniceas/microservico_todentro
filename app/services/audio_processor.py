@@ -161,3 +161,8 @@ def process_audio(data: dict):
     except Exception as e:
         logging.error(f"❌ Erro ao processar o áudio: {e}")
         return {"error": f"Erro ao processar o áudio: {e}"}, 500
+
+# Definir caminho manualmente para o FFmpeg
+AudioSegment.converter = "/usr/bin/ffmpeg"
+AudioSegment.ffmpeg = "/usr/bin/ffmpeg"
+AudioSegment.ffprobe = "/usr/bin/ffprobe"

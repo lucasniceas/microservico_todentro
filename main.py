@@ -1,5 +1,13 @@
 import sys
 import os
+import subprocess
+
+try:
+    result = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True, check=True)
+    print("✅ FFmpeg está instalado! Versão:")
+    print(result.stdout)
+except FileNotFoundError:
+    print("❌ FFmpeg NÃO está instalado corretamente!")
 
 # Adiciona o diretório raiz do projeto ao PYTHONPATH
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
