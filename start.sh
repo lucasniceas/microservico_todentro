@@ -1,6 +1,10 @@
 #!/bin/bash
-echo "🔹 Atualizando pacotes e instalando FFmpeg..."
-apt-get update && apt-get install -y ffmpeg
 
-echo "✅ FFmpeg instalado com sucesso. Iniciando aplicação..."
+# Atualiza os pacotes do sistema
+apt-get update 
+
+# Instala o ffmpeg
+apt-get install -y ffmpeg 
+
+# Inicia o aplicativo Python
 python3 main.py
