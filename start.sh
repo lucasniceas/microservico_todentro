@@ -1,10 +1,3 @@
 #!/bin/bash
-
-# Atualiza os pacotes do sistema
-apt-get update 
-
-# Instala o ffmpeg
-apt-get install -y ffmpeg 
-
-# Inicia o aplicativo Python
+apt-get update && apt-get install -y ffmpeg
 python3 main.py
