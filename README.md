@@ -123,5 +123,5 @@ Se houver necessidade de ajustes, como **alterar a posição dos cortes, incluir
 
 ---
 
-📌 **Projeto concluído!** Agora basta testar e enviar ao cliente. 🚀🎧
+
 
